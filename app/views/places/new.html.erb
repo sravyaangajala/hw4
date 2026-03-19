@@ -1,10 +1,13 @@
-<h1>New Place</h1>
+<h1 class="mb-3">New Place</h1>
 
 <form action="/places" method="post">
-  <p>
-    <label for="name_input">Name</label>
-    <input type="text" name="name" id="name_input">
-  </p>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-  <button>Save</button>
+  <div class="mb-3">
+    <label class="form-label" for="name_input">Name</label>
+    <input class="form-control" id="name_input" type="text" name="name">
+  </div>
+
+  <button class="btn btn-primary">Save</button>
+  <a class="btn btn-secondary" href="/places">Cancel</a>
 </form>

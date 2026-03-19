@@ -5,3 +5,6 @@ Rails.application.routes.draw do
   resources "sessions"
   resources "users"
 end
+get("/login",  { :controller => "sessions", :action => "new" })
+get("/signup", { :controller => "users",    :action => "new" })
+get("/logout", { :controller => "sessions", :action => "destroy" })
