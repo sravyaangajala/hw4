@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 class="mb-3"><%= @place["name"] %></h1>
 
 <div class="mb-3">
@@ -22,3 +23,21 @@
     </div>
   <% end %>
 </div>
+=======
+<h1><%= @place["name"] %></h1>
+
+<h2>My Entries</h2>
+<% for entry in @entries %>
+  <h3><%= entry["title"] %></h3>
+  <h4><%= entry["occurred_on"] %></h4>
+  <p><%= entry["description"] %></p>
+<% end %>
+
+<p>
+  <a href="/entries/new?place_id=<%= @place["id"] %>">New Entry</a>
+</p>
+
+<p>
+  <a href="/places">Back to All Places</a>
+</p>
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca

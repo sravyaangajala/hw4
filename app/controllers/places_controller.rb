@@ -1,5 +1,8 @@
 class PlacesController < ApplicationController
+<<<<<<< HEAD
   before_action :force_user_sign_in
+=======
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 
   def index
     @places = Place.all
@@ -7,6 +10,7 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find_by({ "id" => params["id"] })
+<<<<<<< HEAD
 
     @entries = Entry.where({
       "place_id" => @place["id"],
@@ -29,6 +33,13 @@ def create
 
   redirect_to "/places/#{@entry["place_id"]}"
 end
+=======
+    @entries = Entry.where({ "place_id" => @place["id"] })
+  end
+
+  def new
+  end
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 
   def create
     @place = Place.new
@@ -36,4 +47,8 @@ end
     @place.save
     redirect_to "/places"
   end
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 end

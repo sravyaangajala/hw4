@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :current_user
 
   def current_user
+<<<<<<< HEAD
     @current_user = User.find_by({ "id" => session["user_id"] })
   end
 
@@ -11,3 +12,8 @@ class ApplicationController < ActionController::Base
     end
   end
 end
+=======
+    puts "------------------ code before every request ------------------"
+  end
+end
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca

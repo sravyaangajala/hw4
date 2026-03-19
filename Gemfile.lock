@@ -233,7 +233,11 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
+<<<<<<< HEAD
    ruby 4.0.2p0
+=======
+   ruby 4.0.1p0
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 
 BUNDLED WITH
    2.4.5

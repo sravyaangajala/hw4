@@ -67,5 +67,8 @@ Rails.application.configure do
   
   # So we don't get the "Cannot render console" message in Gitpod
   config.web_console.whiny_requests = false
+<<<<<<< HEAD
   config.active_storage.service = :local
+=======
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 end

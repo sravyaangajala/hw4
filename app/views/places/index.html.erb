@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 class="mb-3">Places</h1>
 
 <div class="mb-3">
@@ -11,3 +12,16 @@
     </li>
   <% end %>
 </ul>
+=======
+<h1>Places</h1>
+
+<ul>
+  <% for place in @places %>
+    <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/places/new">New place</a>
+</p>
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca

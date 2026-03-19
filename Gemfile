@@ -1,7 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+<<<<<<< HEAD
 ruby "4.0.2"
+=======
+ruby "4.0.1"
+>>>>>>> 0976d30de68aec61589aef93250edad3c48753ca
 
 gem "rails", "~> 8.1.2"
 gem "sqlite3", "~> 2.1"
